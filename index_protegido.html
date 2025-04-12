@@ -96,7 +96,7 @@
       .then(async (userCredential) => {
         const token = await userCredential.user.getIdToken();
 
-        const response = await fetch("https://SEU-BACKEND.onrender.com/verificar-token", {
+        const response = await fetch("https://https://map-backend-fxp2.onrender.com/verificar-token", {
           method: "POST",
           headers: {
             "Authorization": "Bearer " + token,
